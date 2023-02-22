@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/torch_stable.html"
+verify_ssl = false
+
+[packages]
+numpy = "*"
+matplotlib = "*"
+tqdm = "*"
+numpy-ml = "*"
+sklearn = "*"
+ipdb = "*"
+torch = {index = "pytorch",version = "==1.6.0"}
+optuna = "*"
+pymysql = "*"
+
+[dev-packages]
